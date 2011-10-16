@@ -1,0 +1,2 @@
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-10-16 22:26:56
+addon create advanced --topLevelPackage ee.uiboupin.ats.roo.addon.fieldconstants --description "Creates constants for each field of annotated class"
