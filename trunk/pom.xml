@@ -4,7 +4,7 @@
   <groupId>ee.uiboupin.ats.roo.addon</groupId>
   <artifactId>fieldconstants</artifactId>
   <packaging>bundle</packaging>
-  <version>1.0.0.RC2-SNAPSHOT</version>
+  <version>1.0.0.RC2</version>
   <name>spring-roo-addon-field-constants</name>
   <organization>
     <name>Ats Uiboupin</name>
@@ -107,9 +107,9 @@
     </dependency>
   </dependencies>
   <scm>
-    <connection>scm:svn:https://spring-roo-addon-field-constants.googlecode.com/svn/trunk</connection>
-    <developerConnection>scm:svn:https://spring-roo-addon-field-constants.googlecode.com/svn/trunk</developerConnection>
-    <url>http://code.google.com/p/spring-roo-addon-field-constants/source/browse</url>
+    <connection>scm:svn:https://spring-roo-addon-field-constants.googlecode.com/svn/tags/1.0.0.RC2</connection>
+    <developerConnection>scm:svn:https://spring-roo-addon-field-constants.googlecode.com/svn/tags/1.0.0.RC2</developerConnection>
+    <url>http://code.google.com/p/spring-roo-addon-field-constants/source/browse/tags/1.0.0.RC2</url>
   </scm>
   <distributionManagement>
     <repository>
