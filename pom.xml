@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>ee.uiboupin.ats.roo.addon.fieldconstants</groupId>
-  <artifactId>ee.uiboupin.ats.roo.addon.fieldconstants</artifactId>
+  <groupId>ee.uiboupin.ats.roo.addon</groupId>
+  <artifactId>fieldconstants</artifactId>
   <packaging>bundle</packaging>
   <version>0.1.0.BUILD-SNAPSHOT</version>
-  <name>ee-uiboupin-ats-roo-addon-fieldconstants</name>
+  <name>spring-roo-addon-field-constants</name>
   <organization>
-    <name>Your project/company name goes here (used in copyright and vendor information in the manifest)</name>
+    <name>Ats Uiboupin</name>
   </organization>
   <licenses>
     <license>
