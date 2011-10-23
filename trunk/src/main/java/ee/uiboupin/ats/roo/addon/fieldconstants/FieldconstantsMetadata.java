@@ -58,12 +58,12 @@ public class FieldconstantsMetadata extends
     }
 
     final ClassOrInterfaceTypeDetailsBuilder classBuilder = new ClassOrInterfaceTypeDetailsBuilder(
-        getId(), Modifier.STATIC, repositoryHolderType,
+        getId(), Modifier.PUBLIC|Modifier.STATIC, repositoryHolderType,
         PhysicalTypeCategory.CLASS);
     for (FieldMetadata fieldMetadata : declaredFields) {
       String fieldName = fieldMetadata.getFieldName().getSymbolName();
       FieldMetadataBuilder fieldBuilder = new FieldMetadataBuilder(
-          getId(), Modifier.PRIVATE | Modifier.STATIC
+          getId(), Modifier.PUBLIC | Modifier.STATIC
               | Modifier.FINAL,
           new ArrayList<AnnotationMetadataBuilder>(),
           symbol(fieldName), new JavaType("String"));
