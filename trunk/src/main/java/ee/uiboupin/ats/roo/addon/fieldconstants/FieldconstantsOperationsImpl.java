@@ -83,7 +83,7 @@ public class FieldconstantsOperationsImpl implements FieldconstantsOperations {
       if (GROUP_ID.equals(dependency.getGroupId())) {
         if (ARTIFACT_ID.equals(dependency.getArtifactId())) {
           String dependencyVersion = dependency.getVersion();
-          if (VERSION.equals(dependencyVersion)) {
+          if (VERSION.equals(dependencyVersion) || (VERSION+"-SNAPSHOT").equals(dependencyVersion)) {
           } else {
             log.warning("FieldConstants roo addon version installed to ROO shell doesn't match version used by the project. \n\tVersion of the addon installed to ROO: '" + VERSION
                 + "',\n\tVersion of the addon that the project is depending on: " + dependencyVersion
