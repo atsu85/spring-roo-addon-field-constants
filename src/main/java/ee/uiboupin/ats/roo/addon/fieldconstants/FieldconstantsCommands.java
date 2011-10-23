@@ -57,7 +57,7 @@ public class FieldconstantsCommands implements CommandMarker {
    * This method registers a command with the Roo shell. It has no command attribute.
    * 
    */
-  @CliCommand(value = "fieldconstants all", help = "Add @RooFieldconstants annotation to all classes in the project")
+  @CliCommand(value = "fieldconstants all", help = "Add @RooFieldconstants annotation to all classes in the project that have @RooJavaBean annotation")
   public void all(
       @CliOption(key = "innerClassName", help = "Name of the inner class that will be generated for each class that is annotated by @RooFieldconstants") String innerClassName) {
     operations.annotateAll(innerClassName);
