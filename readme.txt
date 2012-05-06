@@ -47,12 +47,23 @@ Example:
 	    }
 	}
 
+Compatiblity
+	at the moment this add-on is compatible with spring roo 1.1.5.RELEASE
+	- when trying to execute "fieldconstants add ..." command with Spring Roo 1.2.0.M1 you'll get exception because of api changes:
+	Exception in thread "Spring Roo JLine Shell" java.lang.NoSuchMethodError: org.springframework.roo.classpath.PhysicalTypeMetadataProvider.findIdentifier
+	    at ee.uiboupin.ats.roo.addon.fieldconstants.FieldconstantsOperationsImpl.annotateType(FieldconstantsOperationsImpl.java:111)
+        at ee.uiboupin.ats.roo.addon.fieldconstants.FieldconstantsCommands.add(FieldconstantsCommands.java:53)  
+
 Installation in roo shell:
-	// install FieldConstants Roo add-on to Spring Roo
-	osgi start --url file:///C:/tmp/fieldconstants-${version}.jar
+	// first, make sure Spring Roo version You are using is compatible with this plugin (see Compatiblity section)
+	Installing this add-on to roo shell:
+	roo> osgi start --url http://spring-roo-addon-field-constants.googlecode.com/files/fieldconstants-1.0.0.RC3.jar
 	// add FieldConstants add-on dependency to project (this command will be available after project is created and until dependency is not added to the project) 
-	fieldconstants setup
+	roo> fieldconstants setup
 	// add @RooFieldconstants annotation to Dog class
-	fieldconstants add --type ~.domain.Dog
+	roo> fieldconstants add --type ~.domain.Dog
 	// ..or annotate all classes with the annotation
-	fieldconstants all
+	roo> fieldconstants all
+
+Uninstalling this add-on from roo shell:
+	roo> osgi uninstall --bundleSymbolicName fieldconstants
